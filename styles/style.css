@@ -60,6 +60,7 @@ label>input {
 
 textarea {
 	font-family: Verdana;
+  width: 100%;
 }
 
 .survey-entry {
