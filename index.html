@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="styles/style.css" rel="stylesheet">
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<h1 id="title">freeCodeCamp survey form</h1>
+		<p id="explanation">Thank you for taking the time to help us improve the platform</p>
+		<form id="survey-form" action="">
+			<div class="survey-entry">
+				<label class="entry-label" id="name-label" for="name">Name</label>
+				<input id="name" name="name" type="text" placeholder="Enter your name" required />
+			</div>
+			<div class="survey-entry">
+				<label class="entry-label" id="email-label" for="email">Email</label>
+				<input id="email" name="email" type="email" placeholder="Enter your email" required />
+			</div>
+			<div class="survey-entry">
+				<label class="entry-label" id="number-label" for="number">Age <span class="more-info">(optional)</span></label>
+				<input id="number" name="number" type="number" min="10" max ="150" placeholder="Age" />
+			</div>
+			<div class="survey-entry">
+				<p class="entry-label">Wich describe best your current role ?</p>
+				<select id="droprown">
+					<option value="">Please choose an option</option>
+					<option value="student">Student</option>
+					<option value="full-job">Full time job</option>
+					<option value="part-job">Part time job</option>
+					<option value="full-learner">Full time learner</option>
+					<option value="prefer-not">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="survey-entry multi-choices">
+				<p class="entry-label">Would you recommend freeCodeCamp to a friend ?</p>
+				<label for="definitely">
+					<input id="definitely" name="recommandation" value="definitely" type="radio" />Definitely
+				</label>
+				<label for="maybe">
+					<input id="maybe" name="recommandation" value="maybe" type="radio" />Maybe
+				</label>
+				<label for="not-sure">
+					<input id="not-sure" name="recommandation" value="not-sure" type="radio" />Not sure
+				</label>
+			</div>
+			<div class="survey-entry multi-choices">
+				<p class="entry-label">What would you like to see improved ? <span class="more-info">(Check all that apply)</span></p>
+				<label for="front-end">
+					<input id="front-end" name="improvements" value="front-end" type="checkbox" />Front-end projects
+				</label>
+				<label for="back-end">
+					<input id="back-end" name="improvements" value="back-end" type="checkbox" />Back-end projects
+				</label>
+				<label for="data">
+					<input id="data" name="improvement" value="data" type="checkbox" />Data visualization
+				</label>
+				<label for="challenges">
+					<input id="challenges" name="improvement" value="challenges" type="checkbox" />Challenges
+				</label>
+				<label for="community">
+					<input id="community" name="improvement" value="community" type="checkbox" />Open source community
+				</label>
+				<label for="help-rooms">
+					<input id="help-rooms" name="improvement" value="help-rooms" type="checkbox" />Gitter help rooms
+				</label>
+				<label for="videos">
+					<input id="videos" name="improvement" value="videos" type="checkbox" />Videos
+				</label>
+				<label for="meetups">
+					<input id="meetups" name="improvement" value="meetups" type="checkbox" />City meetups
+				</label>
+				<label for="wiki">
+					<input id="wiki" name="improvement" value="wiki" type="checkbox" />Wiki
+				</label>
+				<label for="forum">
+					<input id="forum" name="improvement" value="forum" type="checkbox" />Forum
+				</label>
+				<label for="additional-courses">
+					<input id="additional-courses" name="improvement" value="additional-courses" type="checkbox" />Additional courses
+				</label>
+			</div>
+			<div class="survey-entry">
+				<label class="entry-label" id="add-coms-label" for="additional-comments">Any comments or suggestions ?</label>
+				<textarea id="additional-comments" name="additional-comments" placeholder="Enter your comment here ..."></textarea>
+			</div>
+			<input id="submit" type="submit" value="Submit" />
+		</form>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
