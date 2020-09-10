@@ -127,3 +127,6 @@ textarea {
 	border-radius: 3px;
 }
 
+#submit:hover {
+  cursor: pointer;
+}
