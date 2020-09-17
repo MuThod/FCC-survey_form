@@ -30,17 +30,16 @@ input {
 	font-size: 1em;
 	height: 24px;
 	padding: 4px 15px;
-	border-radius: 16px;
+	border-radius: 18px;
 	border-style: none;
 }
 
 select {
 	font-family: Verdana;
-	font-size: 0.8em;
-	height: 28px;
-	padding: 4px 15px;
-	border-radius: 14px;
-	border-style: none;
+	font-size: 1em;
+	height: 36px;
+	padding: 2px 15px;
+	border-radius: 18px;
 }
 
 p {
@@ -130,6 +129,15 @@ form {
 
 #submit:hover {
   cursor: pointer;
+}
+input, select, textarea {
+  outline: none;
+  border: 2px solid hsl(210, 100%, 20%);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 2px solid hsl(210, 100%, 33%);
 }
 
 @media (max-width: 700px) {
